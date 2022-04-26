@@ -1,0 +1,262 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* GENERAL STYLES */
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    background-color: #E9EFED;
+    color: #494E52;
+}
+
+body{
+    font-size: 1.8em;
+    line-height: 1.5;
+    letter-spacing:0.2rem;
+}
+
+h1,
+h2,
+h3,
+p,
+figure{
+    margin:0
+}
+
+.wrapper{
+    width:80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background-color: white; */
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+
+/* HEADER STYLES */
+header .wrapper{
+    padding:150px;
+    padding-bottom: 75px;
+}
+
+h1{
+    font-size:7.0rem;
+    font-weight:500;
+    text-align: center;
+}
+
+/* MAIN STYLES */
+
+/* search section */
+
+.search .wrapper{
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search form{
+    width:100%;
+}
+
+#stockLookup{
+    display:flex;
+    max-width:500px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    border:1px solid lightgray;
+    border-radius: 6px;
+}
+
+#stockInput{
+    padding:15px;
+    padding-right: 50px;
+    width:100%;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px #888888;
+}
+
+#submitButton{
+    width:50px;
+    position:absolute;
+    right:1%;
+    display:flex;
+    border:none;
+    background-color: white;
+}
+
+.search-icon{
+    width:30px;
+    opacity: 50%;
+}
+
+.search-icon:hover,
+.search-icon:focus{
+    opacity: 100%;
+}
+
+.errorMessage{
+    padding:15px;
+    font-size:1.6rem;
+    color:#494E52;
+    visibility: hidden;
+    letter-spacing: normal;
+}
+
+/* Stock price section */
+.quoteInformation{
+    padding:30px;
+    margin:0 30px;
+    display:flex;
+    border:1px solid lightgrey;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1px 1px 8px #888888;
+    visibility:hidden;
+}
+
+.quoteSummary{
+    width:40%;
+}
+
+.closingPrice div{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:10px;
+}
+
+h2{
+    font-weight: normal;
+}
+
+h3{
+    font-size: 4.0rem;
+    font-weight: bold;
+}
+
+.priceMovement{
+    font-size:2.0rem;
+    background-color: #FCE8E6;
+    color:#A61212;
+    font-weight:bold;
+    padding:2px 5px;
+    border-radius: 5px;
+}
+
+.closingDate{
+    color:#5b9aa0;
+    font-size: smaller;
+}
+
+.historicalChart{
+    flex:1 0 60%;
+}
+
+input[type="radio"]{
+    opacity:0;
+}
+
+input[type="radio"] + label:hover,
+input[type="radio"] + label:focus{
+    background-color: #d6d4e0;
+}
+
+input[type=radio]:checked + label{
+    border-bottom: 5px solid #5b9aa0;
+    font-weight: bold;
+    color: #5b9aa0;
+}
+
+.chartLabels label{
+    padding:0px 12px;
+    padding-top:3px;
+    text-transform: uppercase;
+    font-size:1.4rem;
+}
+
+#priceChart{
+    height:400px;
+    width:100%;
+}
+
+/* FOOTER STYLES */
+footer{
+    background-color: #622569;
+    color:white;
+    padding:20px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* RESPONSIVE STYLES */
+@media(max-width:1250px) {
+    .wrapper{
+        width:90%;
+    }
+    
+    .quoteInformation{
+        flex-direction: column;
+        gap:50px;
+    }
+
+    .quoteSummary{
+        width:100%;
+    }
+
+    h1{
+        line-height: 1.2;
+        font-size: 6.5rem;
+    }
+
+    header .wrapper{
+        padding:100px;
+        padding-bottom: 60px;
+    }
+}
+
+@media(max-width:550px){
+    .wrapper{
+        width:95%;
+    }
+
+    header .wrapper{
+        padding:20px;
+        padding-bottom:40px;
+    
+    }
+
+    .closingPrice div{
+        flex-direction: column;
+        align-items: flex-start;
+        gap:0;
+        margin-bottom: 15px;
+    }
+
+    .chartLabels{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .chartLabels label{
+        padding-top:15px;
+        padding-left: 5px;
+    }
+}
