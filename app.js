@@ -28,9 +28,10 @@ app.IEX_UrlBase_Sandbox="https://sandbox.iexapis.com/stable"
 
 //Yahoo finance used to search for stock symbol
 //limit of 100calls per day
-//available keys - TfXZ31lJQOA3FdX7eYPFmMtZe3gdLV7k2ucFHw40 or TUuNzpRxmA7ETtH9BBzm94uVeITFekjJ1k6gNU7P
+//available keys - TfXZ31lJQOA3FdX7eYPFmMtZe3gdLV7k2ucFHw40 or TUuNzpRxmA7ETtH9BBzm94uVeITFekjJ1k6gNU7P or ppCJdi8seh53eszDjbCjpauSp3sVelJZ1gs2nCJz
+
 app.yfapiBaseURL = "https://yfapi.net/";
-app.yfapiKey = "ppCJdi8seh53eszDjbCjpauSp3sVelJZ1gs2nCJz";
+app.yfapiKey = "oANOxzelNpxk0qhsStZf7eBaRY2v3Xz5uoD4DX63";
 
 //set up base url and token for IEX API
 app.useSandbox = true;
