@@ -34,7 +34,7 @@ app.yfapiBaseURL = "https://yfapi.net/";
 app.yfapiKey = "oANOxzelNpxk0qhsStZf7eBaRY2v3Xz5uoD4DX63";
 
 //set up base url and token for IEX API
-app.useSandbox = true;
+app.useSandbox = false;
 if(app.useSandbox){
     app.IEX_URLBASE = app.IEX_UrlBase_Sandbox;
     app.IEX_TOKEN = app.IEX_TOKEN_Sandbox;
